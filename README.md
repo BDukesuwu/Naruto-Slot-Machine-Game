@@ -1,5 +1,5 @@
 
-WIREFRAME: https://www.figma.com/file/LzGgt5KdB81m0cQzQubkTm/Naruto-Slot-Machine-Game?node-id=0%3A1
+WIREFRAME: https://www.figma.com/proto/LzGgt5KdB81m0cQzQubkTm/Naruto-Slot-Machine-Game?node-id=5%3A23&scaling=min-zoom&page-id=0%3A1
 
 GITHUB REPO: https://github.com/BDukesuwu/Naruto-Slot-Machine-Game
 
