@@ -1,63 +1,70 @@
 
-DUE TODAY
-wireframe
-github repo link
-pseudocode //add to google doc
+WIREFRAME: https://www.figma.com/file/LzGgt5KdB81m0cQzQubkTm/Naruto-Slot-Machine-Game?node-id=0%3A1
+GITHUB REPO: https://github.com/BDukesuwu/Naruto-Slot-Machine-Game
+PSEUDOCODE: https://docs.google.com/document/d/1MT2TdjnlCMnCaqgLnQ9KKwn3EiEnILEbIfbRkWJdWn4/edit?usp=sharing
 
-GAME RULES
-
-1. player must land a combination of matching symbols when they roll
-2. all spins should be treated individually since the outcome is determined by Random Number Generator
-3. if you hit 0 points you lose the game
-
-
+NARUTO SLOT MACHINE GAME
 
 PSEUDOCODE
 
-
-1. Define constants
-   > symbol: all symbols in the slot machine.
-     - symbols have different scores when matched, example: apple = 3 points, but grape = 5 points.
-     - if no symbols match, points are lost
-   > winningCombos: 3 matching symbols wins points
-   > specialSymbol: if special symbol, win some points 
+                                              GAME RULES
+Player must land a combination of matching symbols when they roll
+All spins should be treated individually since the outcome is determined by Random Number Generator
+If you hit 0 points, you lose the game
 
 
+                                               DEFINE CONSTANTS
 
-2. Define the 'state'(data) variables, but dont assign values to them (use init function to take care of this)
-  -
+Symbol - all symbols in the slot machine.
+If no symbols match, points are lost
+Symbols have different scores when matched, example: apple = 3 points, but grape = 5 points.
 
+WinningCombos - 3 matching symbols wins points
 
-3. select and save(cache) elements in variables that need to be accessed in the JS more than once
-
-4. add event listeners to listen to multiple elements with a single listener
-    > when player clicks the 'SPIN' button, the game will run
-    > if (board spinning) player cant click again until the roll is done
-    > else (refresh the 'SPIN' button so that it's clickable to roll again)
-
-5. invoke the init function used to initialize all state(data) variables
-
-6. invole the main render function responsible for transferring ALL state variables to the DOM
+SpecialSymbol - if special symbol, win some points 
 
 
-update all state variables impacted by the user interaction
-  - every matching roll, add the points earner to the current score.
+                                            DEFINE THE STATE VARIABLES
 
-invoke the main render function
+CurrentScore - the current score of the player. Will increase and decrease depending on the players rolls.
+Use a winner variable to represent three different game states - game in session, waiting for roll, or player lost.
+
+SELECT AND CACHE ELEMENTS (that need to be accessed in the JS more than once)
+
+pointsEarned - select and save points earned to add to the current score to create a new current score
+The slots
+
+                                            ADD EVENT LISTENERS
+
+When player clicks the 'SPIN' button, the game will run
+If (board spinning) player cant click again until the roll is done
+Else (refresh the 'SPIN' button so that it's clickable to roll again)
+When player clicks sound button, sound is muted, but sound plays on start-up
 
 
-additional:
-- naruto music playing in the background
-  -player can choose to stop bg music
 
-- naruto picture / gif that:
-  -get excited everytime you earn points
-  -sad when lose points or lose the game
 
-tldr...
-~ Update all state impacted by the interaction, then
-~ Update the DOM by calling render().
 
+                             INVOKE INIT FUNCTION TO INITIALIZE ALL STATE VARIABLES
+
+Upon loading, the game will:
+Initialize the state variables: current score 0, and game state
+3 nulls will be the empty squares
+3 symbols will map to each square, randomly
+Initialize gameLost to null to represent that there is no end game yet
+Render those values to the page
+Wait for the user to click a square
+
+        INVOLVE THE MAIN RENDER FUNCTION RESPONSIBLE FOR TRANSFERRING ALL STATE VERIABLES TO THE DOM
+
+
+                                                        ADDITIONAL
+Naruto music playing in the background, stoppable if player chooses
+
+Naruto picture / gif that’s neutral at the start of the game
+Get’s excited everytime you earn points
+Gets sad when you lose points or lose the game
+Might add a winning quality for a ‘completion’ feeling and less of a ‘gamble-y’ feeling.
 
 
 
