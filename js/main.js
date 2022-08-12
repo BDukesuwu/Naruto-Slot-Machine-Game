@@ -57,9 +57,9 @@ function WinningCombos() { //the function in question lol
     //store it as a triple pleez
     
   } else {
-    document.getElementById("comboMessage").innerHTML = "YOU LOST";
+    document.getElementById("comboMessage").innerHTML = "If You Want To Know Pain, You Must Understand Pain. (LOSE POINTS)";
       let nothing = -2;
-      console.log("If You Want To Know Pain, You Must Understand Pain. Lose points.");
+      console.log("lose points");
       console.log(tsunadeBlessing + nothing);
     //take away points!
   }
