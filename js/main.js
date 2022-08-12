@@ -1,15 +1,19 @@
 'use strict';
 /*----- constants -----*/
-
+//each column is a slot
 const slot1 = document.getElementById('slot1');
 const slot2 = document.getElementById('slot2');
 const slot3 = document.getElementById('slot3');
 
+
+//every symbol stored into an array
 let symbol = [
   'pics/Mangekyou.png', 'pics/rinnegan.png', 'pics/sharingan.png', 'pics/sage.png'
 ];
 
 /*----- app's state (variables) -----*/
+const tsunadeBlessing = 20;
+let currentScore = [];
 
 
 /*----- cached element references -----*/
@@ -33,14 +37,33 @@ function spin() {
 slot1.innerHTML = `<img src=${symbol[Math.floor(Math.random() * 4)]}>`
 slot2.innerHTML = `<img src=${symbol[Math.floor(Math.random() * 4)]}>`
 slot3.innerHTML = `<img src=${symbol[Math.floor(Math.random() * 4)]}>`
+  WinningCombos(); //randomize all slots, then call a function
 }
 
-function winner() {
-  if (slot1.innerHTML === slot2.innerHTML && slot2.innerHTML  === slot3.innerHTML  ) {
-    console.log('nice');
+function WinningCombos() { //the function in question lol
+  if (slot1.innerHTML === slot2.innerHTML && slot2.innerHTML === slot3.innerHTML) {
+    
+      document.getElementById("comboMessage").innerHTML = "YOU GOT A TRIPLE";
+      let triple = 6;
+      console.log("TRIPLE");
+      console.log(tsunadeBlessing + triple);
+    //store it as a triple pls
+    
+  } else if (slot1.innerHTML == slot2.innerHTML || slot1.innerHTML == slot3.innerHTML || slot2.innerHTML == slot3.innerHTML) {
+      document.getElementById("comboMessage").innerHTML = "YOU GOT A DOUBLE";
+      let double = 3;
+      console.log("DOUBLE");
+      console.log(tsunadeBlessing + double);
+    //store it as a triple pleez
+    
   } else {
-    console.log('rip');
+    document.getElementById("comboMessage").innerHTML = "YOU LOST";
+      let nothing = -2;
+      console.log("nothing.");
+      console.log(tsunadeBlessing + nothing);
+    //take away points!
   }
+  
 }
 
-console.log(winner)
+ console.log(WinningCombos)
