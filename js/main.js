@@ -59,7 +59,7 @@ function WinningCombos() { //the function in question lol
   } else {
     document.getElementById("comboMessage").innerHTML = "YOU LOST";
       let nothing = -2;
-      console.log("nothing.");
+      console.log("If You Want To Know Pain, You Must Understand Pain. Lose points.");
       console.log(tsunadeBlessing + nothing);
     //take away points!
   }
