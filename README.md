@@ -22,7 +22,7 @@ slot1.innerHTML = `<img src=${symbol[Math.floor(Math.random() * 4)]}>`
 slot2.innerHTML = `<img src=${symbol[Math.floor(Math.random() * 4)]}>`
 slot3.innerHTML = `<img src=${symbol[Math.floor(Math.random() * 4)]}>`
 ```
-I'd like to just throw in a huge Thank you to Rondell for helping me with this. He helped me not only add mym images to my array, but also iterate through each image randomly.
+I'd like to just throw in a huge Thank you to Rondell for helping me with this. He helped me not only add my images to my array, but also iterate through each image randomly.
 
 ### My biggest challenges
 - Computer Blue Screening Issues
