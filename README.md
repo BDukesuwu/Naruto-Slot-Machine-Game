@@ -25,7 +25,6 @@ Symbols have different scores when matched, example: apple = 3 points, but grape
 
 WinningCombos - 3 matching symbols wins points
 
-SpecialSymbol - if special symbol, win some points 
 
 
                                             DEFINE THE STATE VARIABLES
@@ -43,8 +42,7 @@ The slots
                                             
 
 When player clicks the 'SPIN' button, the game will run
-If (board spinning) player cant click again until the roll is done
-Else (refresh the 'SPIN' button so that it's clickable to roll again)
+
 When player clicks sound button, sound is muted, but sound plays on start-up
 
 
@@ -56,7 +54,7 @@ When player clicks sound button, sound is muted, but sound plays on start-up
 
 Upon loading, the game will:
 Initialize the state variables: current score 0, and game state
-3 nulls will be the empty squares
+
 3 symbols will map to each square, randomly
 Initialize gameLost to null to represent that there is no end game yet
 Render those values to the page
@@ -69,7 +67,3 @@ Wait for the user to click a square
                                                         
 Naruto music playing in the background, stoppable if player chooses
 
-Naruto picture / gif that’s neutral at the start of the game
-Get’s excited everytime you earn points
-Gets sad when you lose points or lose the game
-Might add a winning quality for a ‘completion’ feeling and less of a ‘gamble-y’ feeling.
