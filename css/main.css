@@ -1,72 +1,66 @@
 /*-------- HTML Elements --------*/
 body {
-    margin: 10px;
-    background-image: url("./pics/bg.PNG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-  h1 {
-    color: #f8c53a;
-  }
-  h3 {
-    color: white;
-  }
-  button {
-    cursor: pointer;
-      background-color: #D79C44;
-      color: whitesmoke;
-      margin-left: 8.5em;
-      padding: 1.3em;
-      width: 7.5em;
-  }
-  img {
-    width: 9em;
-    margin: .8em;
-  }
+  margin: 10px;
+  background-image: url("../pics/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   
-  /*---------- ID's ----------*/
-  #bg-player {
-    display: none;
-  }
-  #slot1 {
-    
-  }
-  #slot2 {
-    
-  }
-  #slot3 {
-    
-  }
-  
-  /*-------- classes --------*/
-  .main-board {
-    margin: 0 auto;
-    width: 40em;
-    background: #4a1c1c;
-  }
-  .game-rules {
-    background: #322692;
-    border-radius: 25px;
-    padding-bottom: .1em;
-    padding-top: .01em;
-  }
-  .rules {
-    margin-left: 1em;
-  }
-  .columns {
-    display: flex;
-    justify-content: center;
-    background-color: #e2e3ca;
-  }
-  .spinIt {
-      animation-name: spinning;
-      animation-iteration-count: 3;
-      animation-duration: calc(1s/var(--speed));
-  }
-  
-  .slot {
-    
-  }
-  
-  
+}
+h1 {
+  color: #f8c53a;
+}
+p {
+  color: white;
+  display: inline;
+}
+h3 {
+  color: white;
+}
+button {
+  cursor: pointer;
+    background-color: #D79C44;
+    color: whitesmoke;
+    margin-left: 10.5em;
+    padding: 1.3em;
+    width: 7.5em;
+}
+img {
+  width: 9em;
+  margin: .8em;
+}
+
+/*---------- ID's ----------*/
+#bg-player {
+  display: none;
+}
+#comboMessage {
+  text-align: center;
+  margin: .04em;
+  color: white;
+}
+#currentScore {
+  display: inline;
+  margin-left: 5.5em;
+   color: white;
+}
+
+/*-------- classes --------*/
+.main-board {
+  margin: 0 auto;
+  width: 40em;
+  background: #4a1c1c;
+}
+.game-rules {
+  background: #322692;
+  border-radius: 25px;
+  padding-bottom: .1em;
+  padding-top: .01em;
+}
+.rules {
+  margin-left: 1em;
+}
+.columns {
+  display: flex;
+  justify-content: center;
+  background-color: #e2e3ca;
+}
